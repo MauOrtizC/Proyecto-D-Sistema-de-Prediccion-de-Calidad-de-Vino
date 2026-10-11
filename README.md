@@ -287,17 +287,15 @@ Contiene el proceso relacionado con:
 
 ### `03_ANN_Modelo1.ipynb`
 
-Se utilizará para desarrollar y evaluar la primera arquitectura de Red Neuronal Artificial.
+
 
 ### `04_ANN_Modelo2.ipynb`
 
-Se utilizará para desarrollar una segunda arquitectura de Red Neuronal Artificial y experimentar con una configuración diferente.
+
 
 ### `05_Comparacion_Modelos.ipynb`
 
-Permitirá comparar los modelos utilizando las métricas seleccionadas y determinar cuál presenta el comportamiento más adecuado para el problema.
 
----
 
 ## `src/`
 
