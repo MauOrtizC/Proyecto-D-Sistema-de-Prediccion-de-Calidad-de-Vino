@@ -1,0 +1,8 @@
+{
+  "best_config": "B_dropout_0.2",
+  "hidden_units": [
+    64,
+    32
+  ],
+  "dropout": 0.2
+}
