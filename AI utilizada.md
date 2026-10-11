@@ -29,3 +29,6 @@ El uso de IA en esta etapa consistió en apoyar la definición de una estructura
 
 De esta manera, la IA funcionó como una herramienta de asistencia para organizar el desarrollo, mientras que la implementación final se integró y revisó de acuerdo con los requerimientos específicos del proyecto.
 
+### Readme.md
+
+Se realizó con ayuda de IA  ( por el momento y ser[a revisado posteriormente ) 
