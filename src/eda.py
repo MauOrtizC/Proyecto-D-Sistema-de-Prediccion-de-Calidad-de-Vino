@@ -1,4 +1,4 @@
-"""Segunda parte EDA"""
+"""Primera  parte EDA"""
 
 from pathlib import Path
 from typing import Dict
@@ -77,6 +77,7 @@ class WineEDA:
 
     def duplicate_summary(self) -> Dict[str, float]:
         """Calcula cantidad y porcentaje de duplicados."""
+        """Revisar si es esperado eliminar los duplicados ( Investigando )"""
 
         duplicate_count = int(
             self.dataframe.duplicated().sum()
@@ -92,7 +93,8 @@ class WineEDA:
         }
 
     def quality_distribution(self) -> None:
-        """Grafica la distribución de la puntuación de calidad."""
+        """Grafico de la distribución de la puntuación de calidad."""
+        """Revisar colores ( m[as adelante ) """
 
         plt.figure(figsize=(9, 5))
 
@@ -165,7 +167,7 @@ class WineEDA:
         return distribution
 
     def numerical_distributions(self) -> None:
-        """Grafica histogramas de las variables numéricas."""
+        """Graficos de histogramas de todas las variables numéricas."""
 
         numerical_columns = (
             self.dataframe
@@ -244,7 +246,7 @@ class WineEDA:
         plt.show()
 
     def correlation_matrix(self) -> pd.DataFrame:
-        """Calcula y grafica la correlación de Pearson."""
+        """Calcula y grafica la correlación ."""
 
         numerical_data = self.dataframe.select_dtypes(
             include="number"
@@ -322,7 +324,7 @@ class WineEDA:
     def detect_outliers_iqr(self) -> pd.DataFrame:
         """
         Identifica posibles atípicos utilizando el rango
-        intercuartílico, sin eliminarlos automáticamente.
+        intercuartílico, sin eliminarlos automáticamente. Formulas de Miner[ia de datos 1
         """
 
         numerical_columns = [

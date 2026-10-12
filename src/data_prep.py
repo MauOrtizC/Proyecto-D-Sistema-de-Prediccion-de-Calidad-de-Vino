@@ -1,4 +1,4 @@
-"""Primera parte - Clase para cargar y unificar los datasets """
+"""Segunda parte - Clase para cargar y unificar los datasets """
 
 from pathlib import Path
 from typing import Dict, Tuple
@@ -121,7 +121,7 @@ class WineDataLoader:
         }
 
     def save_combined_data(self, output_path: Path) -> None:
-        """Guarda el dataset unificado en processed."""
+        """Guarda el dataset unificado en la carpeta processed."""
 
         if self.combined_data is None:
             self.combine_data()
@@ -259,6 +259,8 @@ class WinePreprocessor:
 
         self.feature_columns = X.columns.tolist()
 
+        """Usando como ejemplo ejercicio en clase / revisar"""
+
         return {
             "X_train": X_train,
             "X_test": X_test,
@@ -304,7 +306,7 @@ class WinePreprocessor:
         output_directory: Path,
         scaler_path: Path,
     ) -> None:
-        """Guarda datasets procesados y el escalador."""
+        """Guarda datasets procesados y el escalador.Revisar esta parte ya que segun instrucciones se debe guardar en modelos para su uso posterior"""
 
         output_directory = Path(output_directory)
         scaler_path = Path(scaler_path)
@@ -330,3 +332,5 @@ class WinePreprocessor:
             )
 
         joblib.dump(self.scaler, scaler_path)
+
+        """Se crea el joblib del salvado, pero revisar comparando con ejercicio en clase """
