@@ -32,3 +32,7 @@ De esta manera, la IA funcionó como una herramienta de asistencia para organiza
 ### Readme.md
 
 Se realizó con ayuda de IA  ( por el momento y ser[a revisado posteriormente ) 
+
+### Troubleshooting del Tensorflow 
+
+Se utilizó para revisar el problema dekl tensorflow el cuál resultó por estar corriendo en python 3.14 y se requiere 3.12 
