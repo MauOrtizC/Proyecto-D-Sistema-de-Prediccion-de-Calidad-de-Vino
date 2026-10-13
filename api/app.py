@@ -221,6 +221,9 @@ elif menu == "Inferencia (Modelos ANN)":
                         predictor.cargar()
                     score_reg = predictor.predecir_calidad([datos_vino])[0]
                     prob_alta = predictor.predecir_calidad_alta([datos_vino])[0]
+                    st.write("DIAGNÓSTICO - Entrada:", datos_vino)
+                    st.write("DIAGNÓSTICO - Probabilidad real:", prob_alta)
+                    st.write("DIAGNÓSTICO - Regresión real:", score_reg)
                 else:
                     raise Exception("Modelos no disponibles")
             except Exception as e:
@@ -229,7 +232,7 @@ elif menu == "Inferencia (Modelos ANN)":
                     np.clip(4.2 + (alcohol * 0.32) - (volatile_acidity * 1.9) + (sulphates * 0.75), 3.0, 9.0))
                 prob_alta = float(min(max((score_reg - 5.0) / 3.5, 0.05), 0.98))
 
-            es_calidad_alta = prob_alta >= 0.5 or score_reg >= 6.8
+            es_calidad_alta = prob_alta >= 0.5
 
             st.markdown("---")
             st.subheader("Resultados de la Predicción")

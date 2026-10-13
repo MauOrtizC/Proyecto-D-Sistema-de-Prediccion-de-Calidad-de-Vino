@@ -1,6 +1,7 @@
 {
-  "best_config": "B_dropout_0.2",
+  "best_config": "C_profunda_drop",
   "hidden_units": [
+    128,
     64,
     32
   ],
